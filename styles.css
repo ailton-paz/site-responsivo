@@ -1,33 +1,84 @@
+* {
+  box-sizing: border-box;
+}
 
-*/ {
-    box-sizing: border-box;
+@font-face {
+  font-family: "Outer Wilds"; /* Nome para uso no CSS */
+  src: url("fonts/itc-serif-gothic/itc-serif-gothic-regular-588cef4e7134b.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
 }
 
 .parteSuperior {
-    background-image: url('/img/outer-wilds-4k.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 720px;
-    color: white;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+  background-image: url("/img/outer-wilds-4k.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 1000px;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
 
-.parteSuperior nav h1 {
-    margin-left: 12vw;
+/* Estilos para a logo e o nome no topo */
+.parteSuperior .navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
+
+.parteSuperior .logoimage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.parteSuperior .logoimage img {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 12px;
+  height: 5vw;
+}
+
+.links-navbar {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: 10px;
+  display: flex;
+  gap: 20px;
+  font-size: clamp(10px, 1.1vw, 2vw);
+  color: #f9cdb2;
+  text-decoration: none;
+}
+
+.links-navbar a {
+  list-style-type: none;
+  margin-left: auto;
+  padding-left: 15px;
+  border-left: solid #f9cdb2 5px;
+  border-radius: 4px;
+}
+
+/* Sessão do meio */
 .sessaoHistoria {
-    background-color: white;
+  background-color: white;
 }
 
 .sessaoPersonagens {
-    background-color: rgb(59, 58, 58);
-    color: white;
+  background-color: rgb(59, 58, 58);
+  color: white;
 }
 
 .politicas-footer p {
-    display: inline;
+  display: inline;
 }
