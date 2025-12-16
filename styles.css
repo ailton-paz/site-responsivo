@@ -69,6 +69,42 @@ body {
   border-radius: 4px;
 }
 
+/*Meio da primeira sessão*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 8%;
+  font-family: "Outer Wilds";
+}
+
+.hero h1 {
+  font-size: 5vw;
+}
+
+.hero p {
+  font-size: 2.6vw;
+}
+
+.herotext {
+  justify-content: left;
+  width: 50%;
+}
+
+.linksbotao {
+  display:flex;
+  flex-direction: row;
+  
+}
+.herobutton {
+  margin: 1%;
+  text-decoration: none;
+  padding: 2%;
+  color: white;
+  background-color: #fa7a2b;
+  border-radius: 10%;
+  font-size: 2.4vw;
+}
+
 /* Sessão do meio */
 .sessaoHistoria {
   background-color: white;
