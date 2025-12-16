@@ -189,7 +189,6 @@ body {
   margin: 2%;
   width: 250px;
   height: 500px;
-  border: solid white 5px;
   flex-basis: 270px;
   position: relative
 }
@@ -201,6 +200,11 @@ body {
   padding: 0px;
   margin: 0px;
   border: 0px;
+  border-radius: 5%;
+}
+
+.topimgchar {
+  object-position: top;
 }
 
 .politicas-footer p {
