@@ -11,19 +11,47 @@
   font-display: swap;
 }
 
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, sans-serif;
+  font-family: "Space Mono", monospace;
+
 }
 
 .parteSuperior {
   background-image: url("/img/outer-wilds-4k.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   width: auto;
-  height: 1000px;
+  height: auto;
   color: white;
   padding: 0px;
   margin: 0px;
@@ -75,14 +103,17 @@ body {
   flex-direction: column;
   margin: 8%;
   font-family: "Outer Wilds";
+
 }
 
 .hero h1 {
-  font-size: 5vw;
+  font-size: 50px;
+
 }
 
 .hero p {
-  font-size: 2.6vw;
+  font-size: 32px;
+
 }
 
 .herotext {
@@ -102,17 +133,74 @@ body {
   color: white;
   background-color: #fa7a2b;
   border-radius: 10%;
-  font-size: 2.4vw;
+  font-size: 20px;
 }
 
 /* Sessão do meio */
 .sessaoHistoria {
-  background-color: white;
+  background-color: rgb(42, 39, 59);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8%;
+  
 }
 
-.sessaoPersonagens {
-  background-color: rgb(59, 58, 58);
+.sessaoHistoria h1 {
+  flex-grow: 1;
+  flex-basis: 100;
+  width: 500px;
   color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.textohistoria {
+  color: #f9cdb2;
+  flex-grow: 1;
+  flex-basis: 100;
+}
+
+.destaque {
+  color: #fa7a2b;
+}
+
+
+/* Sessão de personagens */
+
+.sessaoPersonagens {
+  background-color: rgb(39, 33, 33);
+  color: white;
+  padding-top: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8%;
+  width: auto;
+  height: auto;
+  justify-content: space-between;
+}
+
+.sessaoPersonagens h1 {
+  width: 100%;
+}
+
+.sessaoPersonagens div {
+  padding: 10px;
+  margin: 2%;
+  width: 250px;
+  height: 500px;
+  border: solid white 5px;
+  flex-basis: 270px;
+  position: relative
+}
+
+.imgchar {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
 
 .politicas-footer p {
