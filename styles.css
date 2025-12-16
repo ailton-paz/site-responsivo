@@ -207,6 +207,65 @@ body {
   object-position: top;
 }
 
+.brightimg { 
+  filter: brightness(80%);
+}
+
+/* Sessão da galeria */
+
+.sessaoGaleria {
+  background-color: rgb(42, 39, 59);
+  color: white;
+  padding-top: 1px;
+  padding: 8%;
+  width: auto;
+  height: auto;
+}
+
+.sessaoGaleria h1 {
+  width: 100%;
+}
+
+.galeriaimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imagens {
+  width: 400px;
+  height: 230px;
+  object-fit: cover;
+  padding: 10px;
+  margin: 0px;
+  border: 0px;
+  border-radius: 8%;
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: rgb(39, 33, 33);
+  color: white;
+  font-size: 10px;
+  height: 20;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.footerlinks a img{
+  width: 20px;
+  height: 20px;
+}
+
 .politicas-footer p {
   display: inline;
+}
+
+.politicas-footer {
+  text-decoration: none;
+  color: antiquewhite;
 }
